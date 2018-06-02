@@ -23,18 +23,6 @@ module.exports = {
   },
   watch: false,
   devtool: false,
-  optimization: {
-    splitChunks: {
-      cacheGroups: {
-        styles: {
-          name: 'styles',
-          test: /\.css$/,
-          chunks: 'all',
-          enforce: true,
-        },
-      },
-    },
-  },
   plugins: [
     new webpack.DefinePlugin({
       NODE_ENV: JSON.stringify('production'),
