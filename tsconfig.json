@@ -1,21 +1,31 @@
 {
   "compilerOptions": {
-    "outDir": "./public/",
     "baseUrl": "./",
     "paths": {
       "src/*": ["src/*"]
     },
+    "outDir": "./public/",
     "allowSyntheticDefaultImports": true,
-    "experimentalDecorators": true,
+    "esModuleInterop": true,
     "allowJs": true,
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
+    "noEmitHelpers": true,
     "jsx": "react",
-    "module": "es6",
-    "moduleResolution": "node",
-    "noImplicitAny": true,
+    "lib": ["es7", "dom"],
     "target": "es5",
-    "lib": ["es6", "es7", "dom"],
-    "types": ["node"]
+    "module": "es2015",
+    "moduleResolution": "node",
+    "noImplicitReturns": true,
+    "pretty": true,
+    "removeComments": true,
+    "noEmitOnError": true,
+    "strict": true,
+    "typeRoots": ["node_modules/@types"]
   },
   "include": ["src/**/*.ts"],
-  "exclude": ["node_modules/**"]
+  "exclude": ["node_modules", "src/**/*.spec.*"]
 }

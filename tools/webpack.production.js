@@ -1,4 +1,3 @@
-// const os = require('os');
 const { join } = require('path');
 const webpack = require('webpack');
 const AssetsWebpackPlugin = require('assets-webpack-plugin');
@@ -63,7 +62,7 @@ module.exports = {
           {
             loader: 'postcss-loader',
             options: {
-              sourceMap: true,
+              sourceMap: false,
               config: {
                 path: PATH.postcssConfig,
               },
